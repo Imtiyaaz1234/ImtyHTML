@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+<style>
+form ul li label{  
+    float: left;  
+    clear: left;  
+    width: 100px;  
+    text-align: right;  
+    margin-right: 10px;  
+    font-family:Verdana, Arial, Helvetica, sans-serif;  
+    font-size:14px;  
+    }  
+
+    form li {  
+    list-style: none;  
+    margin-bottom: 5px;  
+    }  
+
+</style>
+<title>Second exercise</title>
+
+<script>
+function formValidation()
+{
+	var lname = document.information.userLname;
+	var fname = document.information.userFname;
+	var usermi = document.information.MI;
+	var userAddress = document.information.address;
+	var userCity = document.information.city;
+	var userState = document.information.state;
+	var ZipCode = document.information.zip;
+	var phoneN = document.information.phone;
+	var date = document.information.dob;
+
+	{
+	if(isAllLetter(lname))
+	{
+	if(alpha(userAddress))
+	{
+	if(AllLetter(fname))
+	{
+	if(numeric(ZipCode))
+	{
+	if(Letter(userCity))
+	{
+	if(number(phoneN))
+	{
+	if(DateOfBirth(date))
+	{
+	if(isState(userState))
+	{
+
+	}
+	}	
+	}	
+	}	
+	}	
+	}	
+	}
+	}
+	return false;
+
+	}
+
+	function(isAllLetter(lname))
+	{
+		
+	}
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+<center><h2>Student Information</h2></center>
+<form name='information' onSubmit="return formValidation();">
+
+<ul>
+<li><label for="userLname">Last Name:</label></li>
+<li><input type="text" name="userLname" size="12"/></li>
+<li><label for="userFname">First Name:</label></li>
+<li><input type="text" name="userFname" size="12"/></li>
+<li><label for="MI">MI:</label></li>
+<li><input type="type" name="MI" size="6"/></li>
+<li><label for="address">Address:</label></li>
+<li><input type="text" name="address" size="12"/></li>
+<li><label for="city">City:</label></li>
+<li><input type="text" name="city" size="12"/></li>
+<li><label for="state">Last Name:</label></li>
+<li><input type="text" name="State" size="12"/>
+<li><label for="zip">Zip Code:</label></li>
+<li><input type="text" name="zip" size="12"/></li>
+<li><label for="phone">Phone:</label></li>
+<li><input type="text" name="phone" size="12"/></li>
+<li><label for="dob">Date of birth:</label></li>
+<li><input type="text" name="dob" size="12"/></li>
+
+</li>
+</ul>
+
+<ul>
+
+
+
+
+
+
+
+
+</body>
+
+</hmtl>
